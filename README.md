@@ -195,31 +195,31 @@ En los siguientes gifs e imágenes podremos ver diferentes acciones que podemos 
 - Jugador
   - Movimiento del jugador
   
-    ![movimiento](./img/movimiento.png)
+    ![movimiento](./img/movimiento.gif)
 
   - Disparo del jugador
 
-    ![disparo](./gif/disparo.gif)
+    ![disparo](./img/disparo.gif)
 
 - Dragon enemigo y disparo
  
-  ![brujula](./gif/dragon.gif)
+  ![brujula](./img/dragon.gif)
 
 - Disparar
   
-  ![disparo](./gif/disparos.gif)  
+  ![disparo](./img/disparos.gif)  
    
 - Matar dragón
   
-  ![matar dragon](./gif/matar_dragon.gif)
+  ![matar dragon](./img/matar_dragon.gif)
   
 - Dialogo con personajes
   
-  ![dialogo](./gif/dialogo.gif)
+  ![dialogo](./img/dialogo.gif)
 
 - Comprar ventaja de maquina
   
-  ![ventaja](./gif/ventaja.gif)
+  ![ventaja](./img/ventaja.gif)
   
 <br>
 
