@@ -203,15 +203,11 @@ En los siguientes gifs e imágenes podremos ver diferentes acciones que podemos 
 
 - Dragon enemigo y disparo
  
-  ![brujula](./img/dragon.gif)
+  ![brujula](./img/matar_dragon.gif)
 
 - Disparar
   
   ![disparo](./img/disparos.gif)  
-   
-- Matar dragón
-  
-  ![matar dragon](./img/matar_dragon.gif)
   
 - Dialogo con personajes
   
