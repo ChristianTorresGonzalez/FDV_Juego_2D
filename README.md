@@ -143,7 +143,7 @@ Para el desarrollo del juego se han usado elementos externos conseguidos en la *
 
 El juego se encuentra principalmente enfocado en la plataforma de PC, por lo que el movimiento del personaje se llevara a cabo con teclado y ratón.
 
-![mando ps4](./img/teclado.png)
+![mando ps4](./img/teclado.jpg)
 
 Combinación de teclas y botones:
 **- Movimiento del personaje:** teclas WASD
