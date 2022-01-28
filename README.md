@@ -187,26 +187,23 @@ Para llevar un control de todo el trabajo he usado **git** para el control de ve
 
 En los siguientes gifs e imágenes podremos ver diferentes acciones que podemos tener en el juego.
 
-- Mapa exterior
+- Mapa 
   - Imagen desde arriba del mapa
   
-    ![mapa](./img/mapa_superior.png)
-  - Gif en primera persona del mapa
+    ![mapa](./img/mapa.png)
 
-    ![mapa_gif](./gif/mapa_jugador.gif)
-
-- Cueva
-  - Imagen desde arriba de la cueva
+- Jugador
+  - Movimiento del jugador
   
-    ![cueva](./img/cueva.png)
+    ![movimiento](./img/movimiento.png)
 
-  - Gif en primera persona de la cueva
+  - Disparo del jugador
 
-    ![cueva gif](./gif/cueva_jugador.gif)
+    ![disparo](./gif/disparo.gif)
 
-- Brújula del juego
+- Dragon enemigo y disparo
  
-  ![brujula](./gif/mapa_jugador.gif)
+  ![brujula](./gif/dragon.gif)
 
 - Disparar
   
@@ -216,17 +213,13 @@ En los siguientes gifs e imágenes podremos ver diferentes acciones que podemos 
   
   ![matar dragon](./gif/matar_dragon.gif)
   
-- Recoger coleccionables
+- Dialogo con personajes
   
-  ![recoger vida](./gif/recoger_objetos.gif)
+  ![dialogo](./gif/dialogo.gif)
 
-- Recoger granada
+- Comprar ventaja de maquina
   
-  ![recoger granada](./gif/recoger_granada.gif)
-  
-- Lanzar granada para abrir la entrada de la cueva
-  
-  ![lanzar granada](./gif/remper_entrada.gif)
+  ![ventaja](./gif/ventaja.gif)
   
 <br>
 
@@ -241,7 +234,7 @@ En el siguiente enlace pueden encontrar un video de demostración del juego dond
 
 En este enlace encontrarán la apk del juego para Android para poder descargarla y probarlo:
 
-- [Enlace a la APK](https://drive.google.com/drive/folders/1YtmsQQzDkYqvRnYO_EpQO6FjYOqmcLBc?usp=sharing)
+- [Enlace a la APK](https://github.com/ChristianTorresGonzalez/FDV_ProyectoFinal_Juego2D.git)
 
 ### Github Proyecto completo
 
