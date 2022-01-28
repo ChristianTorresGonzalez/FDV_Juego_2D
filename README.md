@@ -1,7 +1,8 @@
+
 ## Rescate de la princesa <!-- omit in toc -->
 
 - Universidad de La Laguna
-- **Master Desarrollo de Videojuegos**
+- **Master:** Desarrollo de Videojuegos
 - **Asignatura:** Fundamento de Desarrollo de Videojuegos
 - **Trabajo Final de Asignatura:** Creación de un juego arcade 2D en Unity
 
@@ -19,7 +20,6 @@
 - [📋 Hitos de programación logrados](#-hitos-de-programación-logrados)
 - [😲 Aspectos destacables del juego](#-aspectos-destacables-del-juego)
 - [🔧 Metodología de trabajo](#-metodología-de-trabajo)
-- [✍🏼 Reparto de tareas](#-reparto-de-tareas)
 - [📹 Gifs de demostración del juego](#-gifs-de-demostración-del-juego)
 - [🔎 Enlaces de interés](#-enlaces-de-interés)
   - [Gameplay del juego](#gameplay-del-juego)
@@ -38,7 +38,7 @@
 
 ## 🗣 Introducción
 
-En el presente documento se redacta la informacion referente al juego arcade 2D que he creado para la asignatura Fundamento de Desarrollo de Videojuegos.
+En el presente documento se redacta la información referente al juego arcade 2D que he creado para la asignatura Fundamento de Desarrollo de Videojuegos.
 
 El juego se basa en los juegos arcade 2D pero con la peculiaridad de que esta desarrollado desde una vista **topdown** lo que significa que el juego se desarrolla en una perspectiva superior de tal forma que estaríamos viéndolo desde arriba.
 
@@ -62,7 +62,9 @@ Finalmente una vez tenemos nuestra misión principal asignada, nos tendremos que
 
 
 ### Descripción del mapa
-El mapa en el que se desarrolla el juego se encuentra dividido en tres principales zonas:
+El mapa en el que se desarrolla el juego ha sido desarrollado completamente desde cero usando diferentes assets incluidos en los tilempas extraídos de diferentes sitios (Asset Store e internet). 
+
+A su vez, se encuentra dividido en tres principales zonas:
 - **Puerto:** es la zona de inicio del juego. En ella encontraremos diferentes elementos con los que podremos interactuar y que nos otorgaran información referente a nuestra misión.
 - **Pueblo:** es la zona central del mapa y donde se encuentra el objetivo al que tendremos que acudir para obtener mas información sobre como poder cumplir nuestro objetivo.
 - **Castillo:** es la zona principal donde se desarrolla el juego ya que es donde se encuentra el objetivo que nos permitirá lograr cumplir nuestra misión, es por eso que esta repleto de enemigos.
@@ -72,148 +74,114 @@ El mapa en el que se desarrolla el juego se encuentra dividido en tres principal
 ## 📝Estructura de los scripts
 
 - Bullet
-  - [BulletScript.cs](./scripts/Bullet/BulletScript.cs)
+  - [BulletScript.cs](./Scripts/Bullet/BulletScript.cs)
 - Cámara
-  - [CameraFollow.cs](./scripts/Camera/CameraFollow.cs)
+  - [CameraFollow.cs](./Scripts/Camera/CameraFollow.cs)
 - Canvas
-  - [CanvasAmmoSystem.cs](./scripts/Canvas/CanvasAmmoSystem.cs)
-  - [CanvasLifeSystem.cs](./scripts/Canvas/CanvasLifeSystem.cs)
-  - [CanvasPerks.cs](./scripts/Canvas/CanvasPerks.cs)
-  - [CanvasPlayerPoints.cs](./scripts/Canvas/CanvasPlayerPoints.cs)
-  - [CanvasPlayerRevive.cs](./scripts/Canvas/CanvasPlayerRevive.cs)
-  - [CanvasReloadWeapon.cs](./scripts/Canvas/CanvasReloadWeapon.cs)
+  - [CanvasAmmoSystem.cs](./Scripts/Canvas/CanvasAmmoSystem.cs)
+  - [CanvasLifeSystem.cs](./Scripts/Canvas/CanvasLifeSystem.cs)
+  - [CanvasPerks.cs](./Scripts/Canvas/CanvasPerks.cs)
+  - [CanvasPlayerPoints.cs](./Scripts/Canvas/CanvasPlayerPoints.cs)
+  - [CanvasPlayerRevive.cs](./Scripts/Canvas/CanvasPlayerRevive.cs)
+  - [CanvasReloadWeapon.cs](./Scripts/Canvas/CanvasReloadWeapon.cs)
 - Ciudadanos
-  - [Alcalde.cs](./scripts/Ciudadanos/Alcalde.cs)
-  - [NPCPatroling.cs](./scripts/Ciudadanos/NPCPatroling.cs)
-  - [Piloto.cs](./scripts/Ciudadanos/Piloto.cs)
+  - [Alcalde.cs](./Scripts/Ciudadanos/Alcalde.cs)
+  - [NPCPatroling.cs](./Scripts/Ciudadanos/NPCPatroling.cs)
+  - [Piloto.cs](./Scripts/Ciudadanos/Piloto.cs)
 - Diálogos
-  - [Dialogue.cs](./scripts/Dialogos/Dialogue.cs)
-  - [DialogueManager.cs](./scripts/Dialogos/DialogueManager.cs)
+  - [Dialogue.cs](./Scripts/Dialogos/Dialogue.cs)
+  - [DialogueManager.cs](./Scripts/Dialogos/DialogueManager.cs)
 - Enemigos
-  - [DragonAttack.cs](./scripts/Enemy/DragonAttack.cs)
-  - [DragonDamage.cs](./scripts/Enemy/DragonDamage.cs)
-  - [DragonLife.cs](./scripts/Enemy/DragonLife.cs)
-  - [DragonPatrol.cs](./scripts/Enemy/DragonPatrol.cs)
+  - [DragonAttack.cs](./Scripts/Enemy/DragonAttack.cs)
+  - [DragonDamage.cs](./Scripts/Enemy/DragonDamage.cs)
+  - [DragonLife.cs](./Scripts/Enemy/DragonLife.cs)
+  - [DragonPatrol.cs](./Scripts/Enemy/DragonPatrol.cs)
 - Lógica
-  - [ControladorDelegados.cs](./scripts/Controller/ControladorDelegados.cs)
-- Enemy
-  - [DamageToDragon.cs](./scripts/Enemy/DamageToDragon.cs)
-  - [DragonLifeSystem.cs](./scripts/Enemy/DragonLifeSystem.cs)
-  - [FollowPlayer.cs](./scripts/Enemy/FollowPlayer.cs)
-- FinalEnemy
-  - [FinalDragonFollowPlayer.cs](./scripts/FinalEnemy/FinalDragonFollowPlayer.cs)
-  - [FinalDragonLifeSystem.cs](./scripts/FinalEnemy/FinalDragonLifeSystem.cs)
-- Grenade
-  - [DestroyCaveRock.cs](./scripts/Grenade/DestroyCaveRock.cs)
-  - [GrenadeController.cs](./scripts/Grenade/GrenadeController.cs)
-  - [LaunchGrenade.cs](./scripts/Grenade/LaunchGrenade.cs)
-- Gun
-  - [DestroyBullet.cs](./scripts/Gun/DestroyBullet.cs)
-  - [Shot.cs](./scripts/Gun/Shot.cs)
-- Menu
-  - [MenuButton.cs](./scripts/Menu/MenuButton.cs)
-  - [PlayButton.cs](./scripts/Menu/PlayButton.cs)
-  - [QuitButton.cs](./scripts/Menu/QuitButton.cs)
-  - [StartButton.cs](./scripts/Menu/StartButton.cs)
+  - [ControladorDelegados.cs](./Scripts/Controller/ControladorDelegados.cs)
+- Menú
+  - [FadeInOut.cs](./Scripts/Menu/FadeInOut.cs)
+  - [Menu.cs](./Scripts/Menu/Menu.cs)
+- Perks
+  - [AmmoMachine.cs](./Scripts/Perks/AmmoMachine.cs)
+  - [DoubleTap.cs](./Scripts/Perks/DoubleTap.cs)
+  - [PerkManager.cs](./Scripts/Perks/PerkManager.cs)
+  - [QuickRevive.cs](./Scripts/Perks/QuickRevive.cs)
+  - [SpeedCola.cs](./Scripts/Perks/SpeedCola.cs)
 - Player
-  - [DamageToPlayer.cs](./scripts/Player/DamageToPlayer.cs)
-  - [PlayerLifeSystem.cs](./scripts/Player/PlayerLifeSystem.cs)
-  - [PlayerMovement.cs](./scripts/Player/PlayerMovement.cs)
-- Terrain
-  - [ActivateTerrain.cs](./scripts/Terrain/ActivateTerrain.cs)
-  - [DeactivateTerrain.cs](./scripts/Terrain/DeactivateTerrain.cs)
+  - [PlayerController.cs](./Scripts/Player/PlayerController.cs)
+  - [PlayerDamage.cs](./Scripts/Player/PlayerDamage.cs)
+  - [PlayerLife.cs](./Scripts/Player/PlayerLife.cs)
+  - [PlayerPerks.cs](./Scripts/Player/PlayerPerks.cs)
+  - [PlayerPoints.cs](./Scripts/Player/PlayerPoints.cs)
+  - [PlayerShoot.cs](./Scripts/Player/PlayerShoot.cs)
+- Weapons
+  - [CollectWeapon.cs](./Scripts/Weapons/CollectWeapon.cs)
+  - [Weapon.cs](./Scripts/Weapons/Weapon.cs)
+  - [WeaponFusil.cs](./Scripts/Weapons/WeaponFusil.cs)
+  - [WeaponPistol.cs](./Scripts/Weapons/WeaponPistol.cs)
+
 
 <br>
 
 ## ♥ Elementos externos usados
 
-Para el juego se han usado elementos externos conseguidos en la **Asset Store** aunque posteriormente se han modificado a nuestro gusto como pueden ser los siguientes:
+Para el desarrollo del juego se han usado elementos externos conseguidos en la **Asset Store** como otros elementos de internet como bien han sido los sprites 2D:
 
-- Modelo de la pistola
-- Modelo de la cueva (Posteriormente modificado por completo)
-- Figuras que servirán como elementos para obtener vida o poder
-- Modelo de una granada
-- Océano
-- Dragones
+- Modelos de internet
+  - Sprites del personaje
+  - Sprites de las maquinas de ventajas
+  - Sprites de los barcos del puerto
+  - Sprites de los ciudadanos incluidos en el pueblo
+
+- Modelos de la asset store
+  - Sprites de los dragones enemigos
+  - Cuadros de texto de los diálogos
 
 <br>
 
-## 🎮 Cuestiones importantes para el uso
+## 🎮 Controles del juego
 
-Para este juego se recomienda usar un mando de Play Station 4 ya que es con el que se ha configurado.
+El juego se encuentra principalmente enfocado en la plataforma de PC, por lo que el movimiento del personaje se llevara a cabo con teclado y ratón.
 
-![mando ps4](./img/ps4.png)
+![mando ps4](./img/teclado.png)
 
-Este mando tendrá la siguiente configuración de teclas:
-- **Cuadrado:** Disparar
-- **X:** Saltar
-- **Joystick Izquierdo:** mover al jugador
+Combinación de teclas y botones:
+**- Movimiento del personaje:** teclas WASD
+**- Disparo del personaje:** botón izquierdo del ratón sobre cualquier punto del mapa
+
 <br>
 
 ## 📋 Hitos de programación logrados
 
 En este juego se han aplicado muchas de las técnicas aprendidas en la asignatura y otras nuevas aprendidas a lo largo de la realización del proyecto.
 
-- Sistema de vida y de poder y también el uso de la granada donde se activarán a través de métodos **delegados** para aumentar nuestra vida o poder.
-- **Brújula**
-  - En el juego contarás con un sistema de **sensor** como la brújula para orientarte en el juego y saber a donde ir.
-- **Sonido** del juego tanto en disparos, recolectar objetos.
-- **Animaciones** en el juego
-  - Podemos ver diferentes situaciones donde activaremos animaciones como el caso de matar a un dragón.
-- Uso de elementos de la **Asset Store** como la cueva, dragones, pistola, etc.
+- Todo los sistemas con los que cuenta el personaje (vida, puntos, ventajas (perks) y armas)  se activarán a través de métodos **delegados** para aumentar nuestra vida o poder, cambiar de armas, o comprar ventajas de las maquinas.
+- El juego cuenta con un sistema de diálogos implementado donde el texto se va mostrando progresivamente y tienes que ir interactuando para ir leyendo la conversación que nos muestra el personaje. Además de que algunos objetos además del dialogo, también cuentan con un sistema para poder interactuar con ellos. Cada personaje tiene sus propios textos de tal forma que las conversaciones no se repetirán dando mayor variedad y dinamicidad al juego.
+- Los personajes cuentan con diferentes animaciones a la hora de moverse, atacar o a la hora de morir. Se producirán diferentes animaciones en función del nivel de vida o de la acción a realizar por el personaje.
+- Uso de diferentes tilemaps para crear las diferentes zonas del mapa, además de los diferentes objetos con los que este cuenta
 - Cambio de **escenas**
 
 <br>
 
 ## 😲 Aspectos destacables del juego
 
-- Se evitan mareos teniendo transiciones entre escenas
-- Sonido en el juego para tener una mejor inmersión en él.
-  - Disparos
-  - Obtener objetos
-  - Matar dragón final 
-- Uso de Rigidbody para movimientos y colisiones más realistas
-- Movimiento del agua para más realismo
+- En los cambios de menús (inicio del juego y menú final cuando se terminan las vidas) se produce un desvanecimiento que hace que el cambio no sea brusco para el jugador
+- Las balas que dispara el arma del jugador se disparan a la posición que el jugador desea pulsando con el ratón en el mapa. Inicialmente, solo se podía disparar en la dirección en la que se encontraba el jugador, es decir, arriba, abajo, izquierda, derecha y las diagonales, pero esto suponía una mayor dificultad a la hora de disparar a los enemigos porque tenias que estar en su dirección, además de que a nivel de jugabilidad la empeoraba bastante.
+- En el momento en el que rescatamos al personaje, este comienza a seguirnos y se ve mas realista ya que también tiene animaciones de movimiento.
+- Uso de Rigidbody2D para movimientos y colisiones más realistas
+- Presencia de NPC ciudadanos en el pueblo para darle una mejor dinamicidad e inmersión en el juego
 - Animaciones en el juego como los dragones cuando nos persiguen, los matamos o cuando están en su lugar.
 
 <br>
 
 ## 🔧 Metodología de trabajo
 
-Para este proyecto se ha usado una metodología **Scrum**, de tal manera que hemos ido poniendo objetivos para una fecha en concreta, repartiendonos las tareas y haciendo reuniones en estas fechas de entregas para ver si hemos conseguido los objetivos propuestos, que poder mejorar y pensar en nuevos objetivos para la siguiente fecha.
+Para el desarrollo del proyecto en cuanto a la metodología de trabajo, he desarrollado el juego centrándome en cada uno de los objetos que podemos encontrar en el juego, es decir, primero me centre en crear y darle vida al personaje y todos sus sistemas de vida, armas, puntos, etc. Una vez lo tenia todo terminado, pasé a la creación del mapa y las diferentes zonas en las que este se divide. Tras crear el mapa lo siguiente en lo que me centre, fue en la creación de las ventajas que podemos encontrar por el mapa. Finalmente lo ultimo en lo que me centre una vez tenia todo lo anterior creado, fueron el canvas que podemos encontrar al jugar y el sistema de diálogos al interactuar con los diferentes objetos del juego.
 
-Para llevar un control de todo el trabajo hemos usado **git** para el control de versiones del proyecto y **github** como plataforma para alojarlo en la nube y así de esta manera poder tener un control mayor del proyecto, trabajar en equipo sin problemas y tener la seguridad de que no perdemos nuestros avances.
+Para llevar un control de todo el trabajo he usado **git** para el control de versiones del proyecto y **github** como plataforma para alojarlo en la nube y así de esta manera poder tener un control mayor del proyecto.
 
 <br>
 
-## ✍🏼 Reparto de tareas
-
-- **Óscar Moreira Estévez**
-  - Recolectar objetos
-  - Creación de pistola y disparo de la misma
-  - Persecución del enemigo al jugador
-  - Funcionamiento de la Brújula
-  - Canvas con Brújula en el juego
-  - Documentación del proyecto
-  
-- **Miguel Ángel Ordoñez**
-  - Mapa exterior del juego
-  - Movimiento del jugador
-  - Canvas de la vida y daño del juego
-  - Pistola en primera persona en VR
-  - Menú del juego cuando empieza el juego y cuando acaba
-
-- **Christian**
-  - Sitema de vida y daño del jugador y enemigos
-  - Elementos de vida y poder en el mapa
-  - Efectos de sonido del juego
-  - Optimizar juego para VR
-  - Destruir entrada a la cueva con granada
-
-- **Tareas en común**
-  - Busqueda de prefabs usados en el juego
-  - Creación de la cueva
-  - Ajuste de colliders
 
 ## 📹 Gifs de demostración del juego
 
@@ -267,7 +235,7 @@ En los siguientes gifs e imágenes podremos ver diferentes acciones que podemos 
 ### Gameplay del juego
 En el siguiente enlace pueden encontrar un video de demostración del juego donde se demuestran todo lo creado en este proyecto:
 
-- [Enlace al gameplay](https://drive.google.com/drive/folders/1-cQTrgxszc4wIrp4r8fXu5XaZrM-wVMj?usp=sharing)
+- [Enlace al gameplay](https://youtu.be/DZN83pzJXsw)
 
 ### APK
 
@@ -277,9 +245,9 @@ En este enlace encontrarán la apk del juego para Android para poder descargarla
 
 ### Github Proyecto completo
 
-En el siguiente enlace encontrarán un repositorio de Github donde se encuentra todo el proyecto completo para poder descargarlo y ejecutarlo en Unity:
+En el siguiente enlace encontrarán un repositorio de Github donde se encuentra todo el proyecto completo para poder descargarlo y ejecutarlo en Unity, para dicho repositorio se ha hecho uso de la herramienta Git LFS debido al peso de los archivos con los que cuenta el proyecto:
 
-- [Enlace a repositorio del proyecto en Unity](https://github.com/omorest/Proyecto_Final_II)
+- [Enlace a repositorio del proyecto en Unity](https://github.com/ChristianTorresGonzalez/FDV_ProyectoFinal_Juego2D.git)
   
 <br>
 
@@ -288,12 +256,8 @@ En el siguiente enlace encontrarán un repositorio de Github donde se encuentra 
 - Sería interesante tener una base de datos para guardar información del progreso del
 jugador ya sea una relacional o una no relacional. De esta manera si cerramos el juego y volvemos podemos seguir desde el punto que lo dejamos, guardando los datos como el lugar donde lo dejamos, vida, misiones conseguidas, etc.
 
-- Usar Blender para crear modelos propios del juego.
+- Crear mis propios modelos de los sprites para usar en el juego.
 
-- Poder implementar el uso de la voz ya que al ser android no nos dejará porque es solo una función de windows.
-
-- Implementar los mandos de realidad virtual en el juego para que sea aún más real la
-experiencia del usuario pero es un material del que no disponemos por lo que sería
-imposible.
+- Una posible opción seria la de lanzar el juego en otras plataformas por lo que se configurarían los controles a dicha plataforma.
 
 - Otra cosa que sería interesante es poder publicar el juego, sería una buena idea pero no sin haber implementado las mejoras anteriormente comentadas.
